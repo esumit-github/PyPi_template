@@ -25,22 +25,9 @@ logging.info(f"Creating project by name: {project_name}")
              
 # Following are the list of files that will be created            
 list_of_files = [
-    ".github/workflows/.gitkeep",  # gitkeep is an empty file as per the structure
-    #f"{project_name}/src/__init__.py",
-    f"src/{project_name}/__init__.py",
-    f"tests/unit/__init__.py",
-    f"tests/integration/__init__.py",
-    "init_setup.sh",
-    "requirements.txt",
-    "requirements_dev.txt",
-    "setup.py",
-    "LICENSE",
-    "pyproject.toml",
-    "setup.cfg",
-    "README.md",
-    "tox.ini"  # python packages need to be tested in various environments
-]
-
+    f"src/{project_name}/__init__.py"
+    
+ ]
 
 for filepath in list_of_files:
     filepath = Path(filepath)
