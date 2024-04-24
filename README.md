@@ -1,1 +1,1 @@
-* this is my readme
+* Python Package Template
